@@ -1,0 +1,61 @@
+.inferior {
+    display: flex;
+    flex-direction: column;  /* Cual sera el eje principal */
+    justify-content: space-between;  /* Dispocison del eje principal */
+    align-items: center;  /* Dispocison del ejes secundarios */
+    background-color: #1B262C;
+    margin-bottom: 5px;
+}
+
+.inferior h2 {
+    text-align: center;
+    color: white;
+}
+
+.inferior div {
+    margin: 2px;
+}
+
+.inferior .productosNuevos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.inferior .productosNuevos div {
+    background-color: #3282B8;
+    width: 33%;
+    min-height: 200px;
+}
+
+.inferior .productosNuevos .pacoRabanne {
+    background-image: url("https://www.dnamodels.com/newsletter/wp-content/uploads/2018/03/unnamed13.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+/* cuando el ancho sea menor o igual a 431px */
+@media(max-width:430px) {
+    main section article .texto h2 p{
+        text-align: end;
+    }
+    .inferior{
+        width: 100%;
+        max-width: 430px;
+    }
+
+    .inferior .productosNuevos {
+        flex-direction: column;
+    }
+
+    .inferior .productosNuevos div {
+        width: 100%;
+        min-height: 200px;
+    }
+
+}
+
+/* width= ancho  */  /*  height= largo  */
